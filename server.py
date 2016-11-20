@@ -9,7 +9,7 @@ print(map(increment, [1,2,3]));
 
 @app.route("/")
 def hello():
-    return "Hello World!"
+    return app.send_static_file('index.html')
 
 @app.route("/foo")
 def yo():
